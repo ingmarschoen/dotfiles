@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# shortcuts
+alias g="git"
+alias h="history"
+alias ls='exa'
+alias ll='ls -lF --group-directories-first'
+alias la='ls -alF --group-directories-first'
+
+# Get week number
+alias week='date +%V'
+
+# copy file interactive
+alias cp='cp -i'
+
+# move file interactive
+alias mv='mv -i'
+
+# Enable colored `grep` output
+alias grep='grep --color=auto '
+
+# Aliases
+alias tf='terraform'
+alias vi='vim'
+alias cal='gcal -K --starting-day=1 --iso-week-number=yes'
+alias wetter='curl wttr.in/munich'
+alias myip="curl -w '\n' ifconfig.me"
+alias ssh-unsecure='ssh -o "HostKeyAlgorithms=ssh-rsa" -o "KexAlgorithms=diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1,diffie-hellman-group1-sha1,diffie-hellman-group14-sha1" -o "MACs=hmac-sha1,hmac-sha2-256" -o "Ciphers=aes256-cbc,aes128-ctr,aes192-ctr,aes256-ctr" -o "PasswordAuthentication=yes"'
+
+# control proxy for jump
+alias proxy-on='ssh -fN forward'
+alias proxy-check='ssh -O check forward'
+alias proxy-off='ssh -O exit forward'
