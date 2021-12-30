@@ -3,9 +3,11 @@
 # shortcuts
 alias g="git"
 alias h="history"
-alias ls='exa'
-alias ll='ls -lF --group-directories-first'
-alias la='ls -alF --group-directories-first'
+#alias ls='exa'
+#alias ll='ls -lF --group-directories-first'
+#alias la='ls -alF --group-directories-first'
+alias ll='ls -l'
+alias la='ls -al'
 
 # Get week number
 alias week='date +%V'
